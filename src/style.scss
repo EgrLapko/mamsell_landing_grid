@@ -29,6 +29,7 @@ html {
     font-size: 1.1rem;
     cursor: pointer;
     transition: .2s;
+    
     &:hover {
         background-color: rgba(249, 249, 249, 1);
         color: rgba(241, 106, 123, .9);
@@ -36,6 +37,18 @@ html {
     }
     &:focus {
         outline: none;
+    }
+}
+
+.white {
+    background-color: rgba(249, 249, 249, 1);
+    border: 1px solid rgba(241, 106, 123, .6);
+    color: rgba(241, 106, 123, .9);
+    padding: .6rem;
+    &:hover {
+        background-color: rgba(241, 106, 123, .9);
+        color: rgba(249, 249, 249, 1);
+        border: 1px solid rgba(241, 106, 123, 0);
     }
 }
 
@@ -136,10 +149,75 @@ html {
 // ---------------------------- PRODUCT CARDS
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    margin: auto;
+    width: 100%;
+    grid-gap: 2rem;
     min-height: 40vh;
+    padding: 1rem;
     .card {
-        background-color: rgba(105, 105, 105, .5);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1.5rem;
+        border-radius: 10px;
+        // box-shadow: 1rem 1rem 2rem rgba(105, 105, 105, .3);
+        overflow: hidden;
+        &__image {
+            width: 100%;
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+            z-index: 1;
+        }
+        .fa-heart {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            font-size: 1.5rem;
+            z-index: 2;
+            justify-self: flex-end;
+            margin: .8rem;
+            color: rgba(249, 249, 249, 1);
+            transition: .2s;
+            cursor: pointer;
+            &:hover {
+                color: rgba(241, 106, 123, 1);
+            }
+        }
+        &__title {
+            width: 80%;
+            justify-self: center;    
+            align-self: flex-end;   
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+            z-index: 3;
+            font-size: .9rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-align: center;
+            padding: .8rem;
+            color: rgba(249, 249, 249, 1);
+            background-color: rgba(105, 105, 105, 1);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(105, 105, 105, .5);
+            transform: translateY(50%);
+        }
+        &__category,
+        &__eco {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .fas {
+                margin: 0 .5rem;
+            }
+            .name {
+                color: rgba(105, 105, 105, 1);
+                font-size: .8rem;
+                margin: 0 .5rem;
+            }
+        }
+        .btn {
+            grid-column: 1 / -1;
+            justify-self: center;
+        }
     }
 }

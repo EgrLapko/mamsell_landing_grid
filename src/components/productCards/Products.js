@@ -16,7 +16,7 @@ export const Products = () => {
             <Card img={img2} title="Comfortables Panties" category="Slimming panties" />
             <Card img={img3} title="Gorgeous tights" category="Tights" />
             <Card img={img4} title="Like a second skin..." category="Bodysuits" />
-            <Card img={img5} title="Like a dream..." category="Nightgowns" />
+            <Card img={img5} title="Dream-like pajamas" category="Nightgowns" />
             <Card img={img6} title="And other cool stuff" category="Other" />
         </div>
     )

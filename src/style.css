@@ -34,6 +34,18 @@ html {
   outline: none;
 }
 
+.white {
+  background-color: #f9f9f9;
+  border: 1px solid rgba(241, 106, 123, 0.6);
+  color: rgba(241, 106, 123, 0.9);
+  padding: 0.6rem;
+}
+.white:hover {
+  background-color: rgba(241, 106, 123, 0.9);
+  color: #f9f9f9;
+  border: 1px solid rgba(241, 106, 123, 0);
+}
+
 .features {
   grid-column: center-start/center-end;
   display: grid;
@@ -127,10 +139,73 @@ html {
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  margin: auto;
+  width: 100%;
+  grid-gap: 2rem;
   min-height: 40vh;
+  padding: 1rem;
 }
 .cards-container .card {
-  background-color: rgba(105, 105, 105, 0.5);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cards-container .card__image {
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  z-index: 1;
+}
+.cards-container .card .fa-heart {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 1.5rem;
+  z-index: 2;
+  justify-self: flex-end;
+  margin: 0.8rem;
+  color: #f9f9f9;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.cards-container .card .fa-heart:hover {
+  color: #f16a7b;
+}
+.cards-container .card__title {
+  width: 80%;
+  justify-self: center;
+  align-self: flex-end;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  z-index: 3;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.8rem;
+  color: #f9f9f9;
+  background-color: dimgray;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(105, 105, 105, 0.5);
+  transform: translateY(50%);
+}
+.cards-container .card__category, .cards-container .card__eco {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards-container .card__category .fas, .cards-container .card__eco .fas {
+  margin: 0 0.5rem;
+}
+.cards-container .card__category .name, .cards-container .card__eco .name {
+  color: dimgray;
+  font-size: 0.8rem;
+  margin: 0 0.5rem;
+}
+.cards-container .card .btn {
+  grid-column: 1/-1;
+  justify-self: center;
 }
