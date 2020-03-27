@@ -4,6 +4,7 @@ import { Features } from './components/features/Features';
 import Story from './components/story/Story';
 import StoryImages from './components/story/StoryImages';
 import { Products } from './components/productCards/Products';
+import Gallery from './components/gallery/Gallery';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         />
       </div>
       <Products />
+      <Gallery />
     </div>
   );
 }
