@@ -5,6 +5,7 @@ import Story from './components/story/Story';
 import StoryImages from './components/story/StoryImages';
 import { Products } from './components/productCards/Products';
 import Gallery from './components/gallery/Gallery';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       </div>
       <Products />
       <Gallery />
+      <Footer />
     </div>
   );
 }

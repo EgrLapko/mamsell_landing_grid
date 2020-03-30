@@ -20,6 +20,11 @@ html {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: unset;
+}
+
 .btn {
     background-color: rgba(241, 106, 123, .9);
     color: rgba(249, 249, 249, 1);
@@ -285,5 +290,50 @@ html {
         height: 100%;
         object-fit: cover;
         display: block;
+    }
+}
+
+// ---------------------------- FOOTER
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 4rem;
+    &__list-container {
+        display: grid;
+        justify-items: center;
+        padding: .5rem;
+        margin: 1rem;
+        .list-title {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            border-bottom: 1px solid rgba(105, 105, 105, .4);
+            margin-bottom: 1rem;
+        }
+        .list {
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            list-style-type: none;
+            justify-items: center;
+            font-weight: 300;
+            &__item {
+                margin: .2rem 0;
+                font-size: 1.1rem;
+                &:hover {
+                    color: rgba(241, 106, 123, 1);
+                }
+            }
+        }
+    }
+    &__text {
+        box-shadow: inset 0px 0px 70px rgba(105, 105, 105, .1);
+        grid-column: 1 / -1;
+        display: grid;
+        .text {
+            justify-self: center;
+            align-self: center;
+            color: rgba(105, 105, 105, 1);
+            font-size: .9rem;
+        }
     }
 }
