@@ -8,7 +8,7 @@ const Story = ({ header, title, text }) => {
             <p className="story__text">
                 {text}
             </p>
-            <button className="btn">Find your beauty</button>
+            <button className="btn white">Find your beauty</button>
         </div>
     )
 }

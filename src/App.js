@@ -6,10 +6,12 @@ import StoryImages from './components/story/StoryImages';
 import { Products } from './components/productCards/Products';
 import Gallery from './components/gallery/Gallery';
 import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
 
 function App() {
   return (
     <div className="app">
+      <Header />
       <Features />
       <div className="stories-container">
         <StoryImages />
