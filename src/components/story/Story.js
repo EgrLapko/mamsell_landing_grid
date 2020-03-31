@@ -8,7 +8,11 @@ const Story = ({ header, title, text }) => {
             <p className="story__text">
                 {text}
             </p>
-            <button className="btn white">Find your beauty</button>
+            <button className="btn white">
+                <a href="https://petite-mamsell.netlify.com/login" target="_blank">
+                    Find your beauty
+                </a>
+            </button>
         </div>
     )
 }

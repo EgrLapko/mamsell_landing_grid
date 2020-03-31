@@ -12,12 +12,12 @@ export const Products = () => {
 
     return (
         <div className="cards-container">
-            <Card img={img1} title="Beautiful Bras" category="Bralettes" />
-            <Card img={img2} title="Comfortables Panties" category="Slimming panties" />
-            <Card img={img3} title="Gorgeous tights" category="Tights" />
-            <Card img={img4} title="Beautiful bodysuits" category="Bodysuits" />
-            <Card img={img5} title="Dream-like pajamas" category="Nightgowns" />
-            <Card img={img6} title="And other cool stuff" category="Other" />
+            <Card img={img1} title="Beautiful Bras" category="Bralettes" link="https://petite-mamsell.netlify.com/products/bras_bralettes" />
+            <Card img={img2} title="Comfortables Panties" category="Slimming panties" link="https://petite-mamsell.netlify.com/products/panties_slimming"/>
+            <Card img={img3} title="Gorgeous tights" category="Tights" link="https://petite-mamsell.netlify.com/products/accessories_tights" />
+            <Card img={img4} title="Beautiful bodysuits" category="Bodysuits" link="https://petite-mamsell.netlify.com/products/accessories_bodysuits" />
+            <Card img={img5} title="Dream-like pajamas" category="Nightgowns" link="https://petite-mamsell.netlify.com/products/sleepwear_nightgowns" />
+            <Card img={img6} title="And other cool stuff" category="Other" link="https://petite-mamsell.netlify.com/products/accessories_other" />
         </div>
     )
 }
