@@ -400,6 +400,9 @@ a {
   grid-row: 1/2;
   z-index: 1;
 }
+.cards-container .card__image img {
+  width: 100%;
+}
 .cards-container .card .fa-heart {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -468,6 +471,9 @@ a {
     width: 100%;
     grid-row-gap: 0.5rem;
     border-radius: 0px;
+  }
+  .cards-container .card__image img {
+    width: 100%;
   }
   .cards-container .card__title {
     font-size: 0.7rem;
