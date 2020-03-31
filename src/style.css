@@ -389,7 +389,6 @@ a {
 .cards-container .card {
   display: grid;
   width: 80%;
-  min-width: 14rem;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 1.5rem;
   border-radius: 10px;
