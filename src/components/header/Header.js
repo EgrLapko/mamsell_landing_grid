@@ -44,7 +44,7 @@ const Header = () => {
 
                     <img src={rodin} alt="Dmitro Rodin" className="founders__img"/>
                     <div className="founders__details">
-                        <h4 className="name">Dmitro Rodin</h4>
+                        <h4 className="name">Dmytro Rodin</h4>
                         <p className="role">Sceptic</p>
                     </div>
                 </div>
